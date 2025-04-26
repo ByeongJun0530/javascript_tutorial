@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배열</title>
+</head>
+<body>
+    <h1 class="num"></h1>
+    <h1 class="num"></h1>
+    <h1 class="num"></h1>
+
+    <script>
+        // 배열 : 변수들을 문쳐놓은 것 
+        var 숫자1 = 1;
+        var 숫자2 = 2;
+        var 숫자3 = 3;
+
+        // 숫자 세트 [배열]
+        var 배열 = [1, 5, 9]
+
+        // *배열은 0번부터 시작*
+        // 클래스 이름으로 찾으려면 배열 형태로 사용 
+        document.getElementsByClassName('num')[0].innerHTML = 배열[0]
+        document.getElementsByClassName('num')[1].innerHTML = 배열[1]
+        document.getElementsByClassName('num')[2].innerHTML = 배열[2]
+
+
+
+    </script>
+</body>
+</html>
