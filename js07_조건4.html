@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>조건4</title>
+</head>
+<body>
+    <input type="number" id="age" placeholder="나이를 입력하세요">
+    <button onclick="checkAdult()">확인</button>
+    <h1 id="result"></h1>
+
+    <script>
+        // value >= 18 : 성인, 미성년자 
+        function checkAdult(){
+            // 삼항연산자를 통해서 입력된 값이 18살 이상이면 
+            // 성인이라고 화면에 출력 
+            // 성인이 아니면 미성년자라고 화면에 띄우기 
+            // 비교식 ? 성인(true) : 미성년자(false)
+            var age = document.getElementById('age').value;
+            var 결과 = age >= 18 ? "성인" : "미성년자";
+            document.getElementById('result').innerHTML = 결과;
+        }
+    </script>
+</body>
+</html>

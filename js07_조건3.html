@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>조건3</title>
+</head>
+<body>
+    <h1 id="h1_text"></h1>
+    <h1 id="hello"></h1>
+    <p id="sum"></p>
+
+    <input id="text_input" type="text" placeholder="비밀번호를 입력하세요">
+    <button id="submit-btn" onclick="검사()">버튼</button>
+    <h1 id="result"></h1>
+
+    <script>
+        // 조건문 if(){}
+        // 1234
+        function 검사(){
+            // input 에 적힌 값이 "1234" 라면 '성공'
+            var value = document.getElementById('text-input').value;
+            // if 조건문 : () 안에 식이 맞으면 {}에 있는 코드를 실행행
+            // if(value === "1234"){
+            //     // 입력한 값이 1234 라면 
+            //     document.getElementById('result').innerHTML = "정답"
+            // }
+            // 삼항연산자 : 조건을 주고 맞으면 왼쪽을 실행, 틀리면 오른쪽을 실행 
+            // ? 를 기준으로 비교식을 적어주고
+            // ? 를 기준으로 오른쪽에는 : 을 적어준다
+            // : 을 기준으로 비교식이 맞을 때 실행할 코드는 : 왼쪽에 기입 
+            // 틀릴 때 실행할 코드는 : 오른쪽에 기입 
+            value === "1234" ? document.getElementById('result').innerHTML = "정답" 
+                            : document.getElementById('result').innerHTML = "오답";
+
+            // === : 왼쪽과 오른쪽이 같니?
+            // !== : 왼쪽과 오른쪽이 다르니? 
+            // > : 왼쪽의 값이 더 크기?
+            // < : 오른쪽의 값이 더 크니?
+            // >= : 왼쪽의 값이 크거나 같니? 
+            // <= : 오른쪽의 값이 크거나 같니?
+            // 맞으면 true, 틀리면 false
+
+        }
+
+        // 여기에 자바스크립트 입력
+        // 자바스크립트 : HTML 문서를 실시간으로 조작하기 위한 프로그램 언어 
+        document.getElementById('h1_text').innerHTML = "안녕하세요"
+        document.getElementById('h1_text').style.color = "blueviolet"
+
+        //function 이라고 적으면 함수 생성
+        
+        function 인사하기(이름){
+            document.getElementById('hello').innerHTML = "안녕하세요 " + 이름 + " 입니다."
+        }
+        인사하기('John')
+
+        function 더하기(숫자1, 숫자2){
+            // function 안에서 return 이라는 키워드를 적어주면 
+            // 함수가 끝남과 동시에 return 옆에 적힌 값을 사용한 곳에 전달해준다.
+            return 숫자1 + 숫자2
+        }
+        var 결과값 = 더하기(3,4);     // return 이 있는 함수는 변수로 받아준다.
+        document.getElementById('sum').innerHTML = 결과값
+
+    </script>
+</body>
+</html>
