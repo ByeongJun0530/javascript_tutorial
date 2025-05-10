@@ -1,0 +1,44 @@
+let 배열 = []
+
+// 유사한 코드를 연속적으로 실행할 때 while, for 
+let 숫자 = 0
+while(숫자 < 5){
+    배열.push(숫자)
+    숫자 += 1       // 숫자 값을 1 증가시켜 저장 
+}
+
+console.log(배열)   // [0, 1, 2, 3, 4]
+
+let 또다른배열 = []
+for(let 임시 = 0; 임시 < 5; 임시++){
+    또다른배열.push(임시)
+}
+
+console.log(또다른배열) // [0, 1, 2, 3, 4]
+
+배열 = []       // 0~4 => 1~5
+for(let 임시 = 1; 임시 <= 5; 임시++){
+    배열.push(임시)
+}
+console.log(배열)
+
+배열 = []       // 2, 4, ...
+for(let 임시 = 0; 임시 < 10; 임시+=2){
+    배열.push(임시)
+}
+console.log(배열);
+
+배열 = []       // 2씩 감소하게
+for(let 임시 = 10; 임시 > 0; 임시-=2){
+    배열.push(임시)
+}
+console.log(배열);  // [10, 8, 6, 4, 2]
+
+// for를 통해서 배열 안에 들어있는 모든 값을 사용
+let 합계 = 0 
+for(let index = 0; index < 배열.length; index++){
+    //console.log(배열[index])
+    합계 += 배열[index]
+}
+console.log(합계)   // 30
+
