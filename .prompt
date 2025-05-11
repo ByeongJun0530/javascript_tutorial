@@ -1,10 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ToDo App</title>
-    <style>
+[TASK]
+- HTML과 JAVASCRIPT 기반으로 한 CSS 완성 
+
+[FEATURES]
+- CONTEXT를 참고해서 CSS를 적절하게 구성 
+
+[CONSTRAINTS]
+- 기존의 HTML과 JAVASCRIPT 구조를 최대한 유지하면서 CSS 작성 
+
+[CONTEXT]
+<style>
         *{
             margin: 0;
             padding: 0;
@@ -18,76 +22,6 @@
             background-attachment: fixed;
             min-width: 100%;
             min-height: 100vh;
-            font-family: 'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .form-container{
-            background-color: rgb(255, 255, 255, 0.85);
-            padding: 30px;
-            border-radius: 15px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-            width: 90%;
-            max-width: 400px;
-        }
-        .form-content{
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-        }
-        .form-content h1{
-            text-align: center;
-            color: #333;
-        }
-        #form_input{
-            padding: 10px;
-            font-size: 16px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-        .form_btn{
-            background-color: #c9a14b;
-            color: white;
-            padding: 10px;
-            border: none;
-            border-radius: 5px;
-            font-size: 16px;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-        .form_btn:hover{
-            background-color: #bd903e;
-        }
-        #todoList{
-            margin-top: 20px;
-            list-style: none;
-        }
-        .todo_list{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background-color: #f4f4f4;
-            padding: 10px;
-            margin-bottom: 10px;
-            border-radius: 5px;
-        }
-        .todo_list span{
-            flex-grow: 1; /*무슨 문법이지*/
-            word-break: break-word; /*무슨 문법이지*/
-        }
-        .delete_btn{
-            background-color: #d9534f;
-            color: white;
-            border: none;
-            padding: 6px 12px;
-            border-radius: 4px;
-            cursor: pointer;
-            font-size: 14px;
-            transition: background-color 0.3s ease;
-        }
-        .delete_btn:hover{
-            background-color: #c9302c;
         }
     </style>
 </head>
@@ -153,4 +87,3 @@
         }
     </script>
 </body>
-</html>
